@@ -1,1 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101820">
+<title>LZ-1 Halle Manzell – AR</title>
+<style>
+* {
+box-sizing: border-box;
+}
 
+body {
+margin: 0;
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 24px;
+background: #101820;
+color: #ffffff;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+text-align: center;
+}
+
+main {
+width: 100%;
+max-width: 460px;
+}
+
+.symbol {
+font-size: 56px;
+margin-bottom: 12px;
+}
+
+h1 {
+font-size: 30px;
+margin: 0 0 12px;
+}
+
+p {
+color: #c6d0d8;
+line-height: 1.6;
+}
+
+.ar-button {
+display: block;
+margin-top: 26px;
+padding: 16px 20px;
+border-radius: 12px;
+background: #e4b65c;
+color: #101820;
+font-weight: 700;
+text-decoration: none;
+}
+
+.ar-button:focus-visible {
+outline: 3px solid #ffffff;
+outline-offset: 4px;
+}
+
+.note {
+font-size: 13px;
+margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<main>
+<div class="symbol" aria-hidden="false">---</div>
+<h1>LZ-1 Halle Manzell</h1>
+
+<p>
+Tippe auf "In AR ansehen". Wenn das Objekt erscheint, tippe auf das Würfel-Symbol oben rechts.
+</p>
+
+<a
+class="ar-button"
+rel="ar"
+href="./models/model.usdz"
+aria-label="LZ-1 Halle Manzell in Augmented Reality ansehen"
+>
+In AR ansehen
+</a>
+
+<p class="note">
+Bewege dein Handy nach dem Start langsam,
+um deine Umgebung zu erfassen. Skaliere das Objekt mit zwei Fingern auf dem Display.
+</p>
+</main>
+</body>
+</html>
